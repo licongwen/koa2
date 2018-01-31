@@ -1,5 +1,5 @@
 {
-  "name": "koaforcaces",
+  "name": "koa",
   "version": "1.0.0",
   "dependencies": {
     "fs": "^0.0.1-security",
@@ -7,7 +7,7 @@
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "koa-jwt": "^3.3.0",
-    "koa-router": "^7.3.0",
+    "koa-router": "^7.4.0",
     "koa2-cors": "^2.0.5"
   }
 }
