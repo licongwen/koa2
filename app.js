@@ -46,8 +46,12 @@ router.get('/content',async (ctx,next)=>{
             {"name":"two","age":24}
         ]
     }
-        
-
+    await next();
+})
+router.post('/register',async(ctx,next)=>{
+    var data = ctx.request.body;
+    console.log(data);
+    ctx.body="register successful!";
     await next();
 })
 router.get('/',async (ctx,next)=>{
