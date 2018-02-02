@@ -18,7 +18,7 @@ var login_fn = async(ctx,next)=>{
     })
     db.close();
     data.forEach((item,index,arr)=>{
-        console.log(item.id+','+item.password);
+        //console.log(item.id+','+item.password);
         if(id===item.id && password===item.password){
             ctx.response.body={
                 id:item.id,
@@ -54,7 +54,7 @@ var register_fn = async (ctx,next)=>{
     console.log(id+','+name+','+password+','+email);
     await next();
 };
-
+//导出API接口
 module.exports = {
     'POST /login':login_fn,
     'POST /register':register_fn 

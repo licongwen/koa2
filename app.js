@@ -4,10 +4,6 @@ const bodyparser = require('koa-bodyparser');
 const fs = require('fs');
 const router = require('koa-router')();
 const cors = require('koa2-cors');
-const monk = require('monk');
-const murl = 'localhost:27017/login'
-const db = monk(murl);
-
 const app = new Koa();
 app.use(bodyparser());
 
